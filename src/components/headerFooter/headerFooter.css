@@ -1,0 +1,46 @@
+.navbar {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F2F2F2;
+}
+
+.nav-bar-container.container{
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nav-link {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.footer {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F2F2F2;
+    text-align: center;
+    font-size: 16px;
+}
+
+.footer-brand {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.footer-divider {
+    width: 70vw;
+    border-bottom: black;
+    border-width: 0.5px;
+    border-bottom-style: solid;
+}
+
+.contact {
+    color: black;
+}
+
+.contact:hover {
+    text-decoration-line: none;
+}

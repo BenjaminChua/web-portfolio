@@ -1,0 +1,22 @@
+.exchange-sect {
+    position: relative;
+    text-align: center;
+    color: #333333;
+}
+
+.exchange-sect h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4.5em;
+    opacity: 0;
+}
+
+.exchange-sect:hover .exchange-img{
+    opacity: 40%;
+}
+
+.exchange-sect:hover h1{
+    opacity: 1;
+}

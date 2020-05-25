@@ -3,7 +3,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 
-import './NavBar.css'
+import './headerFooter.css'
 
 const NavBar = () => {
     return (
@@ -16,11 +16,12 @@ const NavBar = () => {
                     <Nav className="ml-auto">
                         <Nav.Link href="#home"> Home </Nav.Link>
                         <Nav.Link href="#resume"> Resume </Nav.Link>
+                        <Nav.Link href="#exchange"> Exchange </Nav.Link>
                     </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-            <div className="bg-transparent pt-5 pb-2"></div>
+            <div className="bg-transparent pt-5 pb-2" />
         </>
     );
 };

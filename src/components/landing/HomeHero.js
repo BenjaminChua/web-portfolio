@@ -15,14 +15,14 @@ const HomeHero = () => {
     const mail = "mailto:benjaminchua95@hotmail.com";
 
     return (
-        <Container className="home-hero align-items-center d-flex" fluid>
+        <Container className="home-hero align-items-center d-flex mb-3" fluid>
             <Container className="pb-lg-3 pb-md-3 pb-sm-1 pb-xs-0">
                 <Row className="px-lg-5 align-items-center">
                     <Col className="text-center" md={6} lg={6}>
                         <Image src={selfPortrait} className="aboutMePortrait" roundedCircle/>
                     </Col>
                     <Col className="pr-md-3 pr-lg-5 pt-2 pt-md-3 text-center text-lg-left" md={6} lg={6}>
-                        <h1 className="display-4 font-weight-bolder"> Hello </h1>
+                        <h1 className="display-4 font-weight-bolder"> Hello! </h1>
                         <p className="pt-md-2 pt-lg-3">
                             I'm Benjamin and I aspire to develop algorithms and applications that better the lives
                             of those in the society. In the next 10 years, I aim to support policy formulation
