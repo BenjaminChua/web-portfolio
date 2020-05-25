@@ -1,6 +1,7 @@
-import React from 'react';
+import React  from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+import { NavLink } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 
 import './headerFooter.css'
@@ -10,13 +11,14 @@ const NavBar = () => {
         <>
             <Navbar collapseOnSelect expand="md" fixed="top">
                 <Container className="nav-bar-container">
-                    <Navbar.Brand href="#home"> BEN </Navbar.Brand>
+                    <Navbar.Brand href="#"> BEN </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ml-auto">
-                        <Nav.Link href="#home"> Home </Nav.Link>
-                        <Nav.Link href="#resume"> Resume </Nav.Link>
-                        <Nav.Link href="#exchange"> Exchange </Nav.Link>
+                        <NavLink className="nav-link" to="/home" id="/home"> Home </NavLink>
+                        <NavLink className="nav-link" to="/resume" id="/resume"> Resume </NavLink>
+                        <NavLink className="nav-link" to="/project" id="/project"> Project </NavLink>
+                        <NavLink className="nav-link" to="/exchange" id="/exchange"> Exchange </NavLink>
                     </Nav>
                     </Navbar.Collapse>
                 </Container>

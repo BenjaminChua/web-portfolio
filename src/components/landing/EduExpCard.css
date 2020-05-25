@@ -18,6 +18,7 @@
 }
 
 .imgText {
+    font-family: Roboto, sans-serif;
     opacity: 0;
     color: white;
     font-size: 16px;

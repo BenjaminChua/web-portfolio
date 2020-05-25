@@ -5,6 +5,7 @@ import NavBar from './headerFooter/NavBar';
 import LandingPage from './landing/LandingPage';
 import ResumePage from './resume/ResumePage';
 import ExchangePage from './exchange/ExchangePage';
+import ProjectPage from './Project/ProjectPage';
 import Footer from './headerFooter/Footer';
 
 const App = () => {
@@ -12,9 +13,10 @@ const App = () => {
         <Router>
             <NavBar />
             <Switch>
-                <Route path="/resume" component={ResumePage} />
+                <Route path="/resume" component={ResumePage}/>
                 <Route path="/exchange" component={ExchangePage} />
-                <Route path="/home" component={LandingPage} />
+                <Route path="/project" component={ProjectPage} />
+                <Route path="/" component={LandingPage} />
             </Switch>
             <Footer />
         </Router>

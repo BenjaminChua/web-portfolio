@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import HomeHero from './HomeHero';
 import Education from './Education';
 import Experience from './Experience';
+import ProjectSect from './ProjectSect';
 import Exchange from './Exchange';
 
 const LandingPage = () => {
@@ -12,6 +13,7 @@ const LandingPage = () => {
             <HomeHero/>
             <Education/>
             <Experience/>
+            <ProjectSect />
             <Exchange />
         </Container>
     );

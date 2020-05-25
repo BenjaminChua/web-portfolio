@@ -8,16 +8,12 @@
 .home-hero {
     font-family: Roboto, sans-serif;
     font-size: 16px;
-    padding: 80px 0;
+    min-height: 85vh;
     background-color: #F2F2F2;
 }
 
 .home-hero h1 {
     font-size: 4.5em;
-}
-
-.home-hero h2 {
-    font-size: 1.5rem;
 }
 
 .btn.btn-hero {
