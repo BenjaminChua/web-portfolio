@@ -5,9 +5,11 @@ import Col from "react-bootstrap/Col";
 
 const ExperienceTemplate = props => {
     return (
-        <Container className="py-3" id={props.exp.id}>
+        <Container className="resume-text py-3" id={props.exp.id}>
             <Row xs={1} sm={2}>
-                <Col className="lead font-weight-bold" sm={8} md={{span: 6, offset: 1}}> {props.exp.name} </Col>
+                <Col sm={8} md={{span: 6, offset: 1}}>
+                    <h1> {props.exp.name} </h1>
+                </Col>
                 <Col sm={4} md={{span: 3, offset: 2}}> {props.exp.period} </Col>
             </Row>
             <Row>

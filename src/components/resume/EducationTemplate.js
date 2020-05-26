@@ -13,9 +13,11 @@ const EducationTemplate = props => {
             {curriculum[skillType].map((skill) => <li className="pl-3"> {skill} </li>)}
         </Tab>)
     return (
-        <Container className="py-3" id={props.edu.id}>
+        <Container className="resume-text py-3" id={props.edu.id}>
             <Row xs={1} sm={2}>
-                <Col className="lead font-weight-bold" sm={8} md={{span: 6, offset: 1}}> {props.edu.degree} </Col>
+                <Col sm={8} md={{span: 6, offset: 1}}>
+                    <h1> {props.edu.degree} </h1>
+                </Col>
                 <Col sm={4} md={{span: 3, offset: 2}}> {props.edu.period} </Col>
             </Row>
             <Row>

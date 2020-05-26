@@ -34,14 +34,14 @@ class ProjectSect extends React.Component {
                                 desc={this.state.redditAnalyser.desc}
                                 backgroundColor={this.state.redditAnalyser.backgroundColor}
                                 color={this.state.redditAnalyser.color}
-                                link={this.state.redditAnalyser.link}
+                                id={this.state.redditAnalyser.link}
                     />
                     <ProjectDet icon={this.state.redditAnalyser2.icon}
                                 name={this.state.redditAnalyser2.name}
                                 desc={this.state.redditAnalyser2.desc}
                                 backgroundColor={this.state.redditAnalyser2.backgroundColor}
                                 color={this.state.redditAnalyser2.color}
-                                link={this.state.redditAnalyser2.link}
+                                id={this.state.redditAnalyser2.link}
                     />
                 </Row>
             </Container>

@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
 import ExperienceTemplate from "./ExperienceTemplate";
 
 class ExperienceSection extends Component {
@@ -29,13 +27,10 @@ class ExperienceSection extends Component {
     }
     render() {
         return (
-            <Container className="py-3">
-                <Row className="justify-content-center">
-                    <h1 className="display-4 font-weight-bolder">{this.state.title}</h1>
-                </Row>
+            <div className="py-3">
                 <ExperienceTemplate exp={this.state.experian}/>
                 <ExperienceTemplate exp={this.state.kpmg}/>
-            </Container>
+            </div>
         );
     }
 }

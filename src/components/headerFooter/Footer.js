@@ -7,6 +7,9 @@ const Footer = () => {
 
     return (
         <div className="footer pt-5 pb-3">
+            <blockquote className="px-5">
+                "Indeed, I count everything as loss because of the surpassing worth of knowing Christ Jesus my Lord"
+            </blockquote>
             <div className="footer-brand"> BEN </div>
             <hr className="footer-divider"/>
             <div className="pt-1 pb-5">

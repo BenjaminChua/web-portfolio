@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
 
 import EducationTemplate from "./EducationTemplate";
 
@@ -51,13 +49,10 @@ class EducationSection extends Component {
     }
     render() {
         return (
-            <Container className="py-3">
-                <Row className="justify-content-center">
-                    <h1 className="display-4 font-weight-bolder"> Education </h1>
-                </Row>
+            <div className="py-3">
                 <EducationTemplate edu={this.state.nus}/>
                 <EducationTemplate edu={this.state.gatech}/>
-            </Container>
+            </div>
         );
     }
 }

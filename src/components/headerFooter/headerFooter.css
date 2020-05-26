@@ -45,3 +45,8 @@
     text-decoration-line: none;
     color: #525252;
 }
+
+blockquote {
+    font-style: italic;
+    color: #333333;
+}
