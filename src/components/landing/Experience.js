@@ -11,15 +11,15 @@ import './Experience.css';
 class Experience extends Component {
     state = {
             kpmg: {
-                path: "/resume/kpmg",
+                id: "kpmg",
                 image: kpmg,
             },
             experian: {
-                path: "/resume/experian",
+                id: "experian",
                 image: experian,
             },
             aisg: {
-                path: "/resume/aisg",
+                id: "aisg",
                 image: aisg,
             },
     }

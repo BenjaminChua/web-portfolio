@@ -1,5 +1,5 @@
-import React from 'react';
-import { HashRouter as Router, Switch, Route } from 'react-router-dom';
+import React  from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import NavBar from './headerFooter/NavBar';
 import LandingPage from './landing/LandingPage';
@@ -16,7 +16,7 @@ const App = () => {
                 <Route path="/resume" component={ResumePage}/>
                 <Route path="/exchange" component={ExchangePage} />
                 <Route path="/project" component={ProjectPage} />
-                <Route path="/" component={LandingPage} />
+                <Route path="/" exact component={LandingPage} />
             </Switch>
             <Footer />
         </Router>

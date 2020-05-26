@@ -13,7 +13,7 @@ class ProjectSect extends React.Component {
             desc: "This is a short description of the project",
             backgroundColor: "#F2F2F2",
             color: "black",
-            link: "redditAnalyser"
+            id: "redditAnalyser"
         },
         redditAnalyser2: {
             icon: redditAnalyser,
@@ -21,7 +21,7 @@ class ProjectSect extends React.Component {
             desc: "This is a short description of the project",
             backgroundColor: "black",
             color: "white",
-            link: "redditAnalyser2"
+            id: "redditAnalyser2"
         },
     }
 

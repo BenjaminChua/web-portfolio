@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'react-bootstrap/Image';
 import Col from 'react-bootstrap/Col';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import Container from 'react-bootstrap/Container';
 
 const ProjectDesc = (props) => {
@@ -12,7 +12,7 @@ const ProjectDesc = (props) => {
                 <Image src={props.icon} style={{ maxWidth: "30%" }}/>
                 <h2> {props.name} </h2>
                 <p> {props.desc} </p>
-                <Link to={`/project/${props.link}`}>
+                <Link to={`/project#${props.id}`} smooth>
                     <button className="ui button">
                         Learn More
                     </button>

@@ -1,14 +1,16 @@
 import React from 'react';
+import EducationSection from './EducationSection';
+import ExperienceSection from './ExperienceSection';
+
+import './ResumePage.css';
 
 class ResumePage extends React.Component {
-    componentDidMount() {
-
-    }
 
     render() {
         return (
             <div>
-                ResumePage
+                <EducationSection />
+                <ExperienceSection />
             </div>
         );
     }

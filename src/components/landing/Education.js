@@ -11,15 +11,15 @@ import './Education.css';
 class Education extends Component {
     state = {
             nus: {
-                path: "/resume/nus",
+                id: "nus",
                 image: nus,
             },
             gt: {
-                path: "/resume/gatech",
+                id: "gatech",
                 image: gt,
             },
             udemy: {
-                path: "/resume/udemy",
+                id: "udemy",
                 image: udemy,
             },
     }
