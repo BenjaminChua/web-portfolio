@@ -3,25 +3,54 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import ProjectDet from './ProjectDet';
 
-import redditAnalyser from '../../assets/redditAnalyzer.png'
-
 class ProjectSect extends React.Component {
     state = {
         redditAnalyser: {
-            icon: redditAnalyser,
+            icon: "reddit square",
             name: "Reddit Apparecium",
-            desc: "This is a short description of the project",
+            desc: "Clusters comments in a Reddit post by their main discussion topic, creating an interactive visualisation",
+            skills: ["LDA", "Sentiment Analysis", "Python", "Flask", "Vue.js"],
             backgroundColor: "#F2F2F2",
             color: "black",
-            id: "redditAnalyser"
+            buttonText: "View Application",
+            link: "https://jakkarintiew.github.io/reddit-aparecium/",
         },
-        redditAnalyser2: {
-            icon: redditAnalyser,
-            name: "Reddit Apparecium 2.0",
-            desc: "This is a short description of the project",
+        doctorRostering: {
+            icon: "doctor",
+            name: "Doctor Rostering",
+            desc: "A web-application that finds the optimal roster based on a dynamic set of constraints and objectives",
+            skills: ["Constraint Programming", "Google OR-Tools", "Python", "Flask", "React.js"],
             backgroundColor: "black",
             color: "white",
-            id: "redditAnalyser2"
+            link: null,
+        },
+        portfolioSelection: {
+            icon: "line graph",
+            name: "Portfolio Selection",
+            desc: "Using a hypothesised feature set, stock returns are predicted and a portfolio is optimised",
+            skills: ["Multi-layer perceptron", "Finance", "Python", "Flask", "html"],
+            backgroundColor: "black",
+            color: "white",
+            link: null,
+        },
+        sentimentAnalysis: {
+            icon: "language",
+            name: "Sentiment Analyser",
+            desc: "An adapted transformer model for sentiment analysis and multilabel classification",
+            skills: ["PyTorch 1.1.0", "Python", "NLP", "Flask"],
+            backgroundColor: "#F2F2F2",
+            color: "black",
+            link: null,
+        },
+        portfolioWebsite: {
+            icon: "react",
+            name: "Portfolio Website",
+            desc: "My first React application: An online visualisation of my portfolio",
+            skills: ["React.js", "Semantic UI", "React Router", "React Bootstrap", "css"],
+            backgroundColor: "black",
+            color: "white",
+            buttonText: "Link to Repo",
+            link: "https://github.com/BenjaminChua/web-portfolio-v2",
         },
     }
 
@@ -29,20 +58,13 @@ class ProjectSect extends React.Component {
         return (
             <Container className="text-center" fluid>
                 <Row xs={1} md={2} lg={2} xl={2}>
-                    <ProjectDet icon={this.state.redditAnalyser.icon}
-                                name={this.state.redditAnalyser.name}
-                                desc={this.state.redditAnalyser.desc}
-                                backgroundColor={this.state.redditAnalyser.backgroundColor}
-                                color={this.state.redditAnalyser.color}
-                                id={this.state.redditAnalyser.link}
-                    />
-                    <ProjectDet icon={this.state.redditAnalyser2.icon}
-                                name={this.state.redditAnalyser2.name}
-                                desc={this.state.redditAnalyser2.desc}
-                                backgroundColor={this.state.redditAnalyser2.backgroundColor}
-                                color={this.state.redditAnalyser2.color}
-                                id={this.state.redditAnalyser2.link}
-                    />
+                    <ProjectDet project={this.state.redditAnalyser} />
+                    <ProjectDet project={this.state.doctorRostering} />
+                    <ProjectDet project={this.state.portfolioSelection} />
+                    <ProjectDet project={this.state.sentimentAnalysis} />
+                </Row>
+                <Row>
+                    <ProjectDet project={this.state.portfolioWebsite} />
                 </Row>
             </Container>
         );
