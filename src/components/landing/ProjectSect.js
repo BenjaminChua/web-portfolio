@@ -56,7 +56,7 @@ class ProjectSect extends React.Component {
 
     render() {
         return (
-            <Container className="text-center" fluid>
+            <Container className="text-center" id="projects" fluid>
                 <Row xs={1} md={2} lg={2} xl={2}>
                     <ProjectDet project={this.state.redditAnalyser} />
                     <ProjectDet project={this.state.doctorRostering} />

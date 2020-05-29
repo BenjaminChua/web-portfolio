@@ -6,8 +6,8 @@ import NavBar from './headerFooter/NavBar';
 import LandingPage from './landing/LandingPage';
 import ResumePage from './resume/ResumePage';
 import ExchangePage from './exchange/ExchangePage';
-import ProjectPage from './project/ProjectPage';
 import Footer from './headerFooter/Footer';
+import ToBeCompleted from './ToBeCompleted';
 
 class App extends React.Component {
     static contextType = pathContext;
@@ -17,9 +17,9 @@ class App extends React.Component {
                 <NavBar/>
                 <Switch>
                     <Route path={this.context.resumePath} component={ResumePage} />
-                    <Route path={this.context.projectPath} component={ProjectPage} />
                     <Route path={this.context.exchangePath} component={ExchangePage} />
                     <Route path={this.context.mainPath} component={LandingPage} />
+                    <Route component={ToBeCompleted} />
                 </Switch>
                 <Footer/>
             </Router>

@@ -18,6 +18,11 @@
     font-size: 16px;
 }
 
+.dropdown-menu {
+    z-index: 1001;
+    background-color: #F2F2F2;
+}
+
 .footer {
     font-family: 'Roboto', sans-serif;
     background-color: #F2F2F2;
