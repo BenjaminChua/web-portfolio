@@ -41,7 +41,7 @@ class ProjectDesc extends React.Component {
         return (
             <Col className="p-3">
                 <Container className="py-5 p-0 align-items-center justify-content-center d-flex" fluid
-                           style={{backgroundColor: this.state.backgroundColor, color: this.state.color, minHeight: "430px"}}>
+                           style={{backgroundColor: this.state.backgroundColor, color: this.state.color, minHeight: "460px"}}>
                     <div className="py-3">
                         <i className={`${this.state.icon} massive middle aligned icon`} />
                         <h2 className="pt-3 pb-2"> {this.state.name} </h2>

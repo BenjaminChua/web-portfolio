@@ -15,7 +15,7 @@
 }
 
 .exchange-sect:hover .exchange-nav-img{
-    opacity: 60%;
+    opacity: 0.6;
 }
 
 .exchange-sect:hover h1{
@@ -27,4 +27,5 @@
     height: 80vh;
     object-fit: cover;
     object-position: 80% 0;
+    opacity: 1;
 }
