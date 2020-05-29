@@ -16,13 +16,13 @@ class EducationSection extends Component {
                 "Operations Research", "Linear Programming", "Dynamic Programming", "Network flow models",
                 "Non-linear programming"],
                 Programming: ["Python", "Machine Learning", "C", "C++"],
-                Math: ["Advanced Calculus", "Mathematical Modelling", "Linear Algebra", "Differentiate Equations"],
-                Systems: ["Queuing models", "Renewal Theory", "Simulation using AutoMod", "System Modelling using " +
+                Math: ["Advanced Calculus", "Mathematical Modelling", "Linear Algebra", "Differential Equations"],
+                Systems: ["Queuing Models", "Renewal Theory", "Simulation using AutoMod", "System Modelling using " +
                 "Stella Architect", "Control charts", "Process Capabilities Analysis", "Acceptance Sampling"],
                 Economics: ["Time value of Money", "Replacement Analysis", "Stochastic Dominance", "Risk Analysis"],
                 Logistics: ["Demand Forecasting", "Production Scheduling", "Inventory Decisions"],
                 Business: ["Marketing", "Financial Accounting", "Managerial Economics"],
-                "Soft Skills": ["Report Writing", "Oral Presentation", "project Work", "Leadership"]
+                "Soft Skills": ["Report Writing", "Oral Presentation", "Project Work", "Leadership"]
             },
             id: "nus",
         },
