@@ -23,7 +23,9 @@ const LandingPage = () => {
             <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
                 <ProjectSect />
             </ScrollAnimation>
-            <Exchange />
+            <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+                <Exchange />
+            </ScrollAnimation>
         </Container>
     );
 }
