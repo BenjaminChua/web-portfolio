@@ -14,7 +14,7 @@ class Exchange extends React.Component {
         return (
             <Link to={`${this.context.exchangePath}/#top`}>
                 <div className="exchange-sect mb-3">
-                    <Image className="exchange-img" src={exchange} id="exchange"/>
+                    <Image className="exchange-nav-img" src={exchange} id="exchange"/>
                     <h1> Exchange </h1>
                 </div>
             </Link>

@@ -14,7 +14,7 @@
     opacity: 0;
 }
 
-.exchange-sect:hover .exchange-img{
+.exchange-sect:hover .exchange-nav-img{
     opacity: 60%;
 }
 
@@ -22,7 +22,7 @@
     opacity: 1;
 }
 
-.exchange-img {
+.exchange-nav-img {
     max-width: 100%;
     height: 80vh;
     object-fit: cover;
