@@ -10,19 +10,18 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 4.5em;
-    opacity: 1;
-}
-
-.exchange-sect:hover .exchange-img{
-    opacity: 1;
-}
-
-.exchange-sect:hover h1{
     opacity: 0;
 }
 
+.exchange-sect:hover .exchange-img{
+    opacity: 60%;
+}
+
+.exchange-sect:hover h1{
+    opacity: 1;
+}
+
 .exchange-img {
-    opacity: 50%;
     max-width: 100%;
     height: 80vh;
     object-fit: cover;

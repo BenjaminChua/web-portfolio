@@ -20,7 +20,6 @@ class NavBar extends React.Component {
                             <Nav className="ml-auto">
                                 <NavLink className="nav-link" to={this.context.mainPath} exact> Home </NavLink>
                                 <NavLink className="nav-link" to={this.context.resumePath}> Resume </NavLink>
-                                {/*<NavLink className="nav-link" to={this.context.projectPath}> project </NavLink>*/}
                                 <NavLink className="nav-link" to={this.context.exchangePath}> Exchange </NavLink>
                             </Nav>
                         </Navbar.Collapse>
