@@ -2,7 +2,7 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import { HashLink as Link } from 'react-router-hash-link';
-import pathContext from '../contexts/pathContext';
+import pathContext from '../../contexts/pathContext';
 
 import './EduExpCard.css'
 

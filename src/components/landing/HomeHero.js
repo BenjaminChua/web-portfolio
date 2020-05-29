@@ -29,9 +29,9 @@ const HomeHero = () => {
                             through data science and analytics.
                         </p>
                         <div className="pt-2">
-                            <ContactIcon link={linkedin} icon="linkedin"/>
-                            <ContactIcon link={github} icon="github"/>
-                            <ContactIcon link={mail} icon="mail"/>
+                            <ContactIcon link={linkedin} icon="linkedin" iconStyle="primary" iconText="LinkedIn"/>
+                            <ContactIcon link={github} icon="github" iconStyle="secondary" iconText="GitHub"/>
+                            <ContactIcon link={mail} icon="mail" iconStyle="teal" iconText="Email"/>
                         </div>
                     </Col>
                 </Row>

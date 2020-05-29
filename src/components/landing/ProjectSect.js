@@ -7,7 +7,7 @@ class ProjectSect extends React.Component {
     state = {
         redditAnalyser: {
             icon: "reddit square",
-            name: "Reddit Apparecium",
+            name: "Reddit Aparecium",
             desc: "Clusters comments in a Reddit post by their main discussion topic, creating an interactive visualisation",
             skills: ["LDA", "Sentiment Analysis", "Python", "Flask", "Vue.js"],
             backgroundColor: "#F2F2F2",

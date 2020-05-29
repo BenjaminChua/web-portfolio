@@ -1,7 +1,7 @@
 import React from 'react';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
-import pathContext from '../contexts/pathContext';
+import pathContext from '../../contexts/pathContext';
 
 class ProjectDesc extends React.Component {
     static contextType = pathContext;
@@ -45,8 +45,8 @@ class ProjectDesc extends React.Component {
                     <div>
                         <i className={`${this.state.icon} massive middle aligned icon`} />
                         <h2 className="pt-3 pb-2"> {this.state.name} </h2>
-                        <p className="px-5"> {this.state.desc} </p>
-                        <p className="px-5"> {this.renderSkill()} </p>
+                        <p className="px-5" style={{ fontSize: "16px"}}> {this.state.desc} </p>
+                        <p className="px-5" style={{ fontStyle: "italic"}}> {this.renderSkill()} </p>
                         {this.renderButton()}
                     </div>
                 </Container>

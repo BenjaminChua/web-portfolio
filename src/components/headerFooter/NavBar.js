@@ -3,7 +3,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 import Container from 'react-bootstrap/Container';
-import pathContext from '../contexts/pathContext';
+import pathContext from '../../contexts/pathContext';
 
 import './headerFooter.css'
 
@@ -20,7 +20,7 @@ class NavBar extends React.Component {
                             <Nav className="ml-auto">
                                 <NavLink className="nav-link" to={this.context.mainPath} exact> Home </NavLink>
                                 <NavLink className="nav-link" to={this.context.resumePath}> Resume </NavLink>
-                                {/*<NavLink className="nav-link" to={this.context.projectPath}> Project </NavLink>*/}
+                                {/*<NavLink className="nav-link" to={this.context.projectPath}> project </NavLink>*/}
                                 <NavLink className="nav-link" to={this.context.exchangePath}> Exchange </NavLink>
                             </Nav>
                         </Navbar.Collapse>

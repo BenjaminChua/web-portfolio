@@ -22,7 +22,7 @@ class EducationSection extends Component {
                 Economics: ["Time value of Money", "Replacement Analysis", "Stochastic Dominance", "Risk Analysis"],
                 Logistics: ["Demand Forecasting", "Production Scheduling", "Inventory Decisions"],
                 Business: ["Marketing", "Financial Accounting", "Managerial Economics"],
-                "Soft Skills": ["Report Writing", "Oral Presentation", "Project Work", "Leadership"]
+                "Soft Skills": ["Report Writing", "Oral Presentation", "project Work", "Leadership"]
             },
             id: "nus",
         },
@@ -45,6 +45,15 @@ class EducationSection extends Component {
                 "of Technology"],
             },
             id: "gatech",
+        },
+        udemy: {
+            degree: "Modern React with Redux",
+            period: "May 20 - May 20",
+            name: "Udemy, Inc.",
+            curriculum: {
+                ReactJs: ["React.js", "React Router", "Webpack", "Context", "Hooks", "Redux", "Redux Thunk", "Axios"],
+            },
+            id: "udemy",
         }
     }
     render() {
@@ -52,6 +61,7 @@ class EducationSection extends Component {
             <div className="py-3">
                 <EducationTemplate edu={this.state.nus}/>
                 <EducationTemplate edu={this.state.gatech}/>
+                <EducationTemplate edu={this.state.udemy}/>
             </div>
         );
     }

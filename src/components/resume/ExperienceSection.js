@@ -19,10 +19,16 @@ class ExperienceSection extends Component {
             period: "May 18 - Aug 18",
             company: "KPMG Services (Lighthouse)",
             det1: "Worked with work mentor in performing data cleaning and wrangling using Pandas (Python) " +
-                     "for a Purchase Order Audit Project",
+                     "for a Purchase Order Audit project",
             det2: "Designed data visuals for internal presentations using Tableau",
-            det3: "Created Excel Macros (VBA) for a Financial Report Automation Project",
+            det3: "Created Excel Macros (VBA) for a Financial Report Automation project",
             id: "kpmg"
+        },
+        aisg: {
+            name: "AI Engineer",
+            period: "Start Jun 2020",
+            company: "AI Singapore",
+            id: "aisg"
         }
     }
     render() {
@@ -30,6 +36,7 @@ class ExperienceSection extends Component {
             <div className="py-3">
                 <ExperienceTemplate exp={this.state.experian}/>
                 <ExperienceTemplate exp={this.state.kpmg}/>
+                <ExperienceTemplate exp={this.state.aisg}/>
             </div>
         );
     }
