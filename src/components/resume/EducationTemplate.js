@@ -13,26 +13,28 @@ const EducationTemplate = props => {
             {curriculum[skillType].map((skill) => <li className="pl-3"> {skill} </li>)}
         </Tab>)
     return (
-        <Container className="resume-text py-3" id={props.edu.id}>
-            <Row xs={1} sm={2}>
-                <Col sm={8} md={{span: 6, offset: 1}}>
-                    <h1> {props.edu.degree} </h1>
-                </Col>
-                <Col sm={4} md={{span: 3, offset: 2}} className="text-sm-right"> {props.edu.period} </Col>
-            </Row>
-            <Row>
-                <Col className="font-weight-bold" md={{offset: 1}}> {props.edu.spec} </Col>
-            </Row>
-            <Row>
-                <Col className="font-italic" md={{offset: 1}}> {props.edu.name} </Col>
-            </Row>
-            <Row>
-                <Col md={{offset: 1}}>
-                    <div> {props.edu.CAP} </div>
-                    <div className="pt-3"> Curriculum: </div>
-                    <Container className="p-0"> <Tabs className="p-0"> {Curr} </Tabs> </Container>
-                </Col>
-            </Row>
+        <Container className="resume-text py-3 px-sm-0 px-md-1 px-lg-5" id={props.edu.id}>
+            <Container className="px-sm-0 px-md-1 px-lg-5">
+                <Row xs={1} sm={2}>
+                    <Col sm={8} md={8}>
+                        <h1> {props.edu.degree} </h1>
+                    </Col>
+                    <Col sm={4} md={4} className="text-sm-right"> {props.edu.period} </Col>
+                </Row>
+                <Row>
+                    <Col className="font-weight-bold"> {props.edu.spec} </Col>
+                </Row>
+                <Row>
+                    <Col className="font-italic"> {props.edu.name} </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <div> {props.edu.CAP} </div>
+                        <div className="pt-3"> Curriculum: </div>
+                        <Container className="p-0"> <Tabs className="p-0"> {Curr} </Tabs> </Container>
+                    </Col>
+                </Row>
+            </Container>
         </Container>
     );
 }
