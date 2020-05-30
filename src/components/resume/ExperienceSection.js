@@ -34,9 +34,9 @@ class ExperienceSection extends Component {
     render() {
         return (
             <div className="py-3">
+                <ExperienceTemplate exp={this.state.aisg}/>
                 <ExperienceTemplate exp={this.state.experian}/>
                 <ExperienceTemplate exp={this.state.kpmg}/>
-                <ExperienceTemplate exp={this.state.aisg}/>
             </div>
         );
     }

@@ -59,9 +59,9 @@ class EducationSection extends Component {
     render() {
         return (
             <div className="py-3">
+                <EducationTemplate edu={this.state.udemy}/>
                 <EducationTemplate edu={this.state.nus}/>
                 <EducationTemplate edu={this.state.gatech}/>
-                <EducationTemplate edu={this.state.udemy}/>
             </div>
         );
     }
