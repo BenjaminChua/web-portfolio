@@ -18,7 +18,7 @@ const EducationTemplate = props => {
                 <Col sm={8} md={{span: 6, offset: 1}}>
                     <h1> {props.edu.degree} </h1>
                 </Col>
-                <Col sm={4} md={{span: 3, offset: 2}}> {props.edu.period} </Col>
+                <Col sm={4} md={{span: 3, offset: 2}} className="text-sm-right"> {props.edu.period} </Col>
             </Row>
             <Row>
                 <Col className="font-weight-bold" md={{offset: 1}}> {props.edu.spec} </Col>

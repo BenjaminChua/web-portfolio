@@ -10,7 +10,7 @@ const ExperienceTemplate = props => {
                 <Col sm={8} md={{span: 6, offset: 1}}>
                     <h1> {props.exp.name} </h1>
                 </Col>
-                <Col sm={4} md={{span: 3, offset: 2}}> {props.exp.period} </Col>
+                <Col sm={4} md={{span: 3, offset: 2}} className="text-sm-right"> {props.exp.period} </Col>
             </Row>
             <Row>
                 <Col className="font-italic" md={{offset: 1}}> {props.exp.company} </Col>
