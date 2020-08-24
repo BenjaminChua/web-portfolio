@@ -11,7 +11,7 @@ import './Education.css';
 class Education extends Component {
     state = {
         udemy: {
-            id: "udemy",
+            id: "docker",
             image: udemy,
         },
         nus: {

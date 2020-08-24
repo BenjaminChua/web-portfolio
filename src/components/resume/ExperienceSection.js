@@ -25,9 +25,12 @@ class ExperienceSection extends Component {
             id: "kpmg"
         },
         aisg: {
-            name: "AI Engineer",
-            period: "Start Jun 2020",
-            company: "AI Singapore",
+            name: "Artificial Intelligence Engineer",
+            period: "Jun 20 - Present",
+            company: "AI Singapore (Technology)",
+            det1: "Aid in the organising of AI challenges through testing of baselines in fields like Reinforcement Learning and Computer Vision",
+            det2: "Organised a one-day Reinforcement Learning challenge during the AI Summer School for international participants using Google Colabs, stable baselines and an auto-grading challenge website",
+            det3: "Dockerised server to use Tensorflow and PyTorch with NVIDIA GPUs",
             id: "aisg"
         }
     }

@@ -5,11 +5,11 @@ import EducationTemplate from "./EducationTemplate";
 class EducationSection extends Component {
     state = {
         nus: {
-            degree: "Bachelor of Engineering (Honours)",
+            degree: "Bachelor of Engineering (Honours w Highest Distinction)",
             period: "Aug 16 - May 20",
             spec: "Industrial & Systems Engineering",
             name: "National University of Singapore",
-            CAP: "Cumulative Average Point (CAP): 4.**/5.00",
+            CAP: "Cumulative Average Point (CAP): 4.5*/5.00",
             curriculum: {
                 Statistics: ["Axioms of Probability", "Conditional probability", "Independence", "Joint and " +
                 "marginal distributions", "Stochastic Modelling", "Markov chains", "ANOVA", "Bootstrap",
@@ -46,20 +46,32 @@ class EducationSection extends Component {
             },
             id: "gatech",
         },
-        udemy: {
+        react: {
             degree: "Modern React with Redux",
             period: "May 20 - May 20",
             name: "Udemy, Inc.",
             curriculum: {
                 ReactJs: ["React.js", "React Router", "Webpack", "Context", "Hooks", "Redux", "Redux Thunk", "Axios"],
             },
-            id: "udemy",
+            id: "react",
+        },
+        docker: {
+            degree: "Docker and Kubernetes: The Complete Guide",
+            period: "Aug 20 - Aug 20",
+            name: "Udemy, Inc.",
+            curriculum: {
+                Docker: ["Dockerfile", "Compose", "Build", "Run", "DockerHub"],
+                Kubernetes: ["Configs", "Apply", "Get", "Describe", "Delete", "Set"],
+                WebDev: ["Travis CI", "Nginx", "Express", "Postgres", "Redis", "AWS", "GCP"]
+            },
+            id: "docker",
         }
     }
     render() {
         return (
             <div className="py-3">
-                <EducationTemplate edu={this.state.udemy}/>
+                <EducationTemplate edu={this.state.docker}/>
+                <EducationTemplate edu={this.state.react}/>
                 <EducationTemplate edu={this.state.nus}/>
                 <EducationTemplate edu={this.state.gatech}/>
             </div>
